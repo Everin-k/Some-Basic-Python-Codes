@@ -1,0 +1,61 @@
+from turtle import *
+import random
+import turtle
+bgcolor("white")
+title("5day project-Shapes")
+pensize(2)
+shape("turtle")
+speed(6)
+#color option
+col = ["red", "white", "orange", "yellow", "purple", "pink",  "indigo"]
+rndcol = random.choice(col)
+#Circle
+penup()
+setposition((-1, -50))
+pendown()
+pencolor(rndcol)
+circle(50)
+penup()
+#Square
+sx = xcor()
+sy = ycor()
+setposition((-50, 50))
+pendown()
+pencolor(rndcol)
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+fd(100)
+penup()
+#Dot
+penup()
+setposition((52, 52))
+pendown()
+pencolor(rndcol)
+dot(10, rndcol)
+penup()
+#Dot
+penup()
+setposition((52, -52))
+pendown()
+pencolor(rndcol)
+dot(10, rndcol)
+penup()
+#Dot
+penup()
+setposition((-52, 50))
+pendown()
+pencolor(rndcol)
+dot(10, rndcol)
+penup()
+#Dot
+penup()
+setposition((-52, -52))
+pendown()
+pencolor(rndcol)
+dot(10, rndcol)
+hideturtle()
+done()
